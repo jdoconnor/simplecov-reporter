@@ -1,0 +1,1 @@
+send simplecov results as json to an external service (URL post)
