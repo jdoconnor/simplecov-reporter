@@ -12,7 +12,7 @@ class SimpleCov::Formatter::Reporter
     keys.each do |k|
       h[k] = result.send(k)
     end
-    HTTParty.post(url, body: { results: h, name: name } )
+    puts HTTParty.post(url, body: h.merge(name: name))
   end
 
 end
